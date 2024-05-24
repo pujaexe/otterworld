@@ -1,0 +1,236 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "jqHMejC8dcPyddaS4gmqUt",
+      "projectApiToken": "l8mqQ3SI9XflEPqaYh5yvONxuYXXC896Po8tP7rV5iNwLDnNjfNaq9KOB1ZVPYAyLjGRYiwL5ItUvAlbvVA",
+      "projectName": "Website starter",
+      "version": "latest",
+      "cssFilePath": "plasmic/website_starter/plasmic.module.css",
+      "components": [
+        {
+          "id": "8uRuDIsw_Axd",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "jqHMejC8dcPyddaS4gmqUt",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        },
+        {
+          "id": "-OeynXv3MoWt",
+          "name": "Card",
+          "type": "managed",
+          "projectId": "jqHMejC8dcPyddaS4gmqUt",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicCard.tsx",
+          "importSpec": {
+            "modulePath": "Card.tsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "cV4cuMllBGg8",
+          "name": "Twitter2SvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Twitter2SvgrepoComsvg.tsx"
+        },
+        {
+          "id": "p8ya4hJMYEbR",
+          "name": "TelegramSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__TelegramSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "5vLE0s1yfrCg",
+          "name": "GitbookSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__GitbookSvgrepoComsvg.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "LmU5mCuC1JuH",
+          "name": "DALL·E 2024-05-23 16.04.34 - A vibrant and playful illustration of a game stage in an otter world, depicting crypto storage wallets. The scene features an otter character happily .webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240523160434AVibrantAndPlayfulIllustrationOfAGameStageInAnOtterWorldDepictingCryptoStorageWalletsTheSceneFeaturesAnOtterCharacterHappilyWebp.webp"
+        },
+        {
+          "id": "aXg1Tyoq-_D8",
+          "name": "DALL·E 2024-05-23 16.04.36 - A vibrant and playful illustration of a game stage in an otter world, depicting a crypto launchpad. The scene features an otter character excitedly pr.webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240523160436AVibrantAndPlayfulIllustrationOfAGameStageInAnOtterWorldDepictingACryptoLaunchpadTheSceneFeaturesAnOtterCharacterExcitedlyPrwebp.webp"
+        },
+        {
+          "id": "O-wfSwWUgaP2",
+          "name": "DALL·E 2024-05-23 16.04.43 - A vibrant and playful illustration of a game stage in an otter world, depicting a crypto community space. The scene features otter characters happily .webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240523160443AVibrantAndPlayfulIllustrationOfAGameStageInAnOtterWorldDepictingACryptoCommunitySpaceTheSceneFeaturesOtterCharactersHappilyWebp.webp"
+        },
+        {
+          "id": "vXHBxyk5LJFV",
+          "name": "DALL·E 2024-05-23 16.04.48 - A vibrant and playful illustration of a game stage in an otter world, depicting a meme coin space. The scene features otter characters engaging in hum.webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240523160448AVibrantAndPlayfulIllustrationOfAGameStageInAnOtterWorldDepictingAMemeCoinSpaceTheSceneFeaturesOtterCharactersEngagingInHumwebp.webp"
+        },
+        {
+          "id": "zJ5k_4DiOAwu",
+          "name": "DALL·E 2024-05-23 16.04.51 - A vibrant and playful illustration of a game stage in an otter world, depicting an airdrop space. The scene features otter characters joyfully receivi.webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240523160451AVibrantAndPlayfulIllustrationOfAGameStageInAnOtterWorldDepictingAnAirdropSpaceTheSceneFeaturesOtterCharactersJoyfullyReceiviwebp.webp"
+        },
+        {
+          "id": "n8dzbM4mv5bw",
+          "name": "bg-otter.png",
+          "filePath": "../public/plasmic/website_starter/images/bgOtterpng.png"
+        },
+        {
+          "id": "0keFdTqb0I8z",
+          "name": "otter-char.png",
+          "filePath": "../public/plasmic/website_starter/images/otterCharpng.png"
+        },
+        {
+          "id": "g8x54nrwaVNG",
+          "name": "Untitled design (13).png",
+          "filePath": "../public/plasmic/website_starter/images/untitledDesign13Png.png"
+        },
+        {
+          "id": "LM_RHVQabTqZ",
+          "name": "DALL·E 2024-05-23 23.47.25 - A vibrant and playful illustration of an otter searching for a wallet scene in portrait mode. The scene features a cheerful otter character actively l.webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240523234725AVibrantAndPlayfulIllustrationOfAnOtterSearchingForAWalletSceneInPortraitModeTheSceneFeaturesACheerfulOtterCharacterActivelyLwebp.webp"
+        },
+        {
+          "id": "mFep6MoJk_QZ",
+          "name": "DALL·E 2024-05-23 23.54.25 - A vibrant and playful illustration of an otter game in portrait mode, featuring an otter launching a rocket. The background is a solid royal blue with.webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240523235425AVibrantAndPlayfulIllustrationOfAnOtterGameInPortraitModeFeaturingAnOtterLaunchingARocketTheBackgroundIsASolidRoyalBlueWithwebp.webp"
+        },
+        {
+          "id": "XkoU-2nlVqCH",
+          "name": "DALL·E 2024-05-23 23.55.56 - A vibrant and playful illustration of an otter game in portrait mode, featuring an otter mining a meme coin. The background is a solid royal blue with.webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240523235556AVibrantAndPlayfulIllustrationOfAnOtterGameInPortraitModeFeaturingAnOtterMiningAMemeCoinTheBackgroundIsASolidRoyalBlueWithwebp.webp"
+        },
+        {
+          "id": "NjKsgq-V_yNr",
+          "name": "DALL·E 2024-05-24 14.12.37 - Design a game background using a royal blue color scheme with vibrant and playful colors. The scene should be wide screen ratio and feature elements s.webp",
+          "filePath": "../public/plasmic/website_starter/images/dalle20240524141237DesignAGameBackgroundUsingARoyalBlueColorSchemeWithVibrantAndPlayfulColorsTheSceneShouldBeWideScreenRatioAndFeatureElementsSwebp.webp"
+        },
+        {
+          "id": "gA867ULMVw5L",
+          "name": "bg.webp",
+          "filePath": "../public/plasmic/website_starter/images/bgwebp.webp"
+        },
+        {
+          "id": "kWFQcX3tL0Sg",
+          "name": "image1.png",
+          "filePath": "../public/plasmic/website_starter/images/image1Png.png"
+        },
+        {
+          "id": "jl0tBNO9bdeZ",
+          "name": "image2.png",
+          "filePath": "../public/plasmic/website_starter/images/image2Png.png"
+        },
+        {
+          "id": "xwuvkyHXqUiB",
+          "name": "image3.png",
+          "filePath": "../public/plasmic/website_starter/images/image3Png.png"
+        },
+        {
+          "id": "42UAKIsbDoLn",
+          "name": "image1-edit.png",
+          "filePath": "../public/plasmic/website_starter/images/image1Editpng.png"
+        },
+        {
+          "id": "PPcr5q4djt4V",
+          "name": "image2-edit.png",
+          "filePath": "../public/plasmic/website_starter/images/image2Editpng.png"
+        },
+        {
+          "id": "KxKqoGMZwKXS",
+          "name": "image3-edit.png",
+          "filePath": "../public/plasmic/website_starter/images/image3Editpng.png"
+        },
+        {
+          "id": "Km-uDT1DWaP0",
+          "name": "Group 4 (1).png",
+          "filePath": "../public/plasmic/website_starter/images/group41Png.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CKiBE_tYVEjp",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "8Ts3UkO6iSxz",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "v6jzT4azP0Fn",
+        "name": "Screen",
+        "projectId": "jqHMejC8dcPyddaS4gmqUt",
+        "contextFilePath": "plasmic/website_starter/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.330",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.330/dist/plasmic.schema.json"
+}
