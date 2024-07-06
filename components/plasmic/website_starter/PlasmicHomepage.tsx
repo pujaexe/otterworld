@@ -60,7 +60,6 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import Card from "../../Card"; // plasmic-import: -OeynXv3MoWt/component
 
 import { useScreenVariants as useScreenVariantsv6JzT4AzP0Fn } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: v6jzT4azP0Fn/globalVariant
 
@@ -87,10 +86,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   navigationBar?: Flex__<typeof NavigationBar>;
-  section?: Flex__<"section">;
-  freeBox?: Flex__<"div">;
-  h1?: Flex__<"h1">;
-  dd?: Flex__<"dd">;
 };
 
 export interface DefaultHomepageProps {}
@@ -123,8 +118,6 @@ function PlasmicHomepage__RenderFunc(props: {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-
-  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsv6JzT4AzP0Fn()
@@ -267,159 +260,466 @@ function PlasmicHomepage__RenderFunc(props: {
             responsiveBreakpoint={768}
           />
 
-          <section
-            data-plasmic-name={"section"}
-            data-plasmic-override={overrides.section}
-            className={classNames(projectcss.all, sty.section)}
-          >
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__rtIc8)}
-              displayHeight={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "400px"
-                  : "auto"
-              }
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "400px"
-                  : "600px"
-              }
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/website_starter/images/otterCharpng.png",
-                fullWidth: 1080,
-                fullHeight: 1080,
-                aspectRatio: undefined
-              }}
-            />
-
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(projectcss.all, sty.freeBox)}
-            />
-
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns___5DPkq)}
-            >
+          <section className={classNames(projectcss.all, sty.section__xWoaY)}>
+            <div className={classNames(projectcss.all, sty.freeBox__qVJgR)}>
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__d8Ckf
+                )}
+              >
+                {"Welcome to Otterworld"}
+              </h1>
+              <h4
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h4,
+                  projectcss.__wab_text,
+                  sty.h4__hvIov
+                )}
+              >
+                {
+                  "The fun and friendly DeFi platform where innovation meets security."
+                }
+              </h4>
+            </div>
+          </section>
+          <section className={classNames(projectcss.all, sty.section__n5Zyj)}>
+            <div className={classNames(projectcss.all, sty.columns__pm2Hj)}>
+              <div className={classNames(projectcss.all, sty.column__xOouk)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__yLvab)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/otterworld/images/land1Webp.webp",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
               <Stack__
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.column__vFy0C)}
+                className={classNames(projectcss.all, sty.column__aFmQv)}
               >
                 <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1
+                    sty.h1__mcCWq
                   )}
                 >
-                  {"Welcome to the Otter World"}
+                  {"Otter World"}
                 </h1>
-                <dd
-                  data-plasmic-name={"dd"}
-                  data-plasmic-override={overrides.dd}
+                <h4
                   className={classNames(
                     projectcss.all,
+                    projectcss.h4,
                     projectcss.__wab_text,
-                    sty.dd
+                    sty.h4__s80O2
                   )}
                 >
                   {
-                    "the future of decentralized finance (DeFi) where innovation meets security."
+                    "Otter World is a comprehensive DeFi platform integrating cutting-edge technology and AI to provide a seamless and secure experience. Join us and be a part of our vibrant community!"
                   }
-                </dd>
+                </h4>
+                <h4
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h4,
+                    projectcss.__wab_text,
+                    sty.h4__iwlZs
+                  )}
+                >
+                  {
+                    "Otter World is a comprehensive DeFi platform integrating cutting-edge technology and AI to provide a seamless and secure experience. Join us and be a part of our vibrant community!"
+                  }
+                </h4>
               </Stack__>
-              <div className={classNames(projectcss.all, sty.column__wIr54)}>
-                <div className={classNames(projectcss.all, sty.columns__f1Zbp)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__kw3IK)}
-                  >
-                    <Card
-                      className={classNames("__wab_instance", sty.card__fgMeI)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__hFG)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"100%"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/website_starter/images/image1Editpng.png",
-                          fullWidth: 1024,
-                          fullHeight: 1024,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Card>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__dQi3H)}
-                  >
-                    <Card
-                      className={classNames("__wab_instance", sty.card__jkmhN)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__yf6Jv)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"100%"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/website_starter/images/image2Editpng.png",
-                          fullWidth: 1024,
-                          fullHeight: 1024,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Card>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__fBvmW)}
-                  >
-                    <Card
-                      className={classNames("__wab_instance", sty.card__zK4CT)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__bmRUx)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"100%"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/website_starter/images/image3Editpng.png",
-                          fullWidth: 1024,
-                          fullHeight: 1024,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Card>
-                  </div>
+            </div>
+          </section>
+          <section className={classNames(projectcss.all, sty.section___1Nyr)}>
+            <div className={classNames(projectcss.all, sty.freeBox__bejzL)}>
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1___2Tkk8
+                )}
+              >
+                {"Otter Kingdom"}
+              </h1>
+            </div>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns___7VoMb)}
+            >
+              <div className={classNames(projectcss.all, sty.column___6PRnW)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___98Ncn)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/otterworld/images/dalle20240706202619ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__kVvNn)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__j0QDu
+                  )}
+                >
+                  {"Otter Wallet: Your DeFi Gateway"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__e2Cbf
+                  )}
+                >
+                  {
+                    "The cornerstone of our ecosystem, Otter Wallet, offers a secure and user-friendly interface for managing your digital assets. With advanced security protocols and seamless integration with other DeFi services"
+                  }
                 </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___5Ynu
+                  )}
+                >
+                  {
+                    "\ud83d\udda5\ufe0f User-Friendly Interface\n\ud83d\udd04 Built-In Swap\n\ud83d\udcca Portfolio Management"
+                  }
+                </div>
+              </Stack__>
+            </Stack__>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__ibUau)}
+            >
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__zLmy)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__qZiLa
+                  )}
+                >
+                  {"Otter Guard: AI-Based Security"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__roMaN
+                  )}
+                >
+                  {
+                    "Our AI-powered security solution, Otter Guard, provides real-time protection for your assets. By continuously monitoring transactions and assessing potential threats, Otter Guard ensures a secure environment for all your DeFi activities"
+                  }
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__zxb9I
+                  )}
+                >
+                  {
+                    "\ud83d\udee1\ufe0f Advanced Threat Detection\n\ud83d\udd0d Smart Contract Auditing\n\ud83d\udee1\ufe0f Asset Protection"
+                  }
+                </div>
+              </Stack__>
+              <div className={classNames(projectcss.all, sty.column__jvLvO)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__vpspT)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/otterworld/images/dalle20240706203126ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
+                />
               </div>
             </Stack__>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__usOmo)}
+            >
+              <div className={classNames(projectcss.all, sty.column__rs9Z6)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__bp5V)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/otterworld/images/dalle20240706203326ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__eMtVb)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__evmF0
+                  )}
+                >
+                  {"Otter Chest"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__w8RAb
+                  )}
+                >
+                  {"Instant asset swapping directly from the wallet."}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__hHeJm
+                  )}
+                >
+                  {
+                    "\u26a1 Effortless Asset Interchange\n\ud83d\udd04 Universal Token Compatibility\n\ud83d\udcb8 Cost-Effective Transactions"
+                  }
+                </div>
+              </Stack__>
+            </Stack__>
+          </section>
+          <section className={classNames(projectcss.all, sty.section__dHqsF)}>
+            <h1
+              className={classNames(
+                projectcss.all,
+                projectcss.h1,
+                projectcss.__wab_text,
+                sty.h1__gcyTs
+              )}
+            >
+              {"Our Roadmap"}
+            </h1>
+            <div className={classNames(projectcss.all, sty.freeBox__wM2No)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__q3Ckc)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/otterworld/images/mapsTransparentMinpng.png",
+                  fullWidth: 1024,
+                  fullHeight: 1821,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+          </section>
+          <section className={classNames(projectcss.all, sty.section__vxmSq)}>
+            <h1
+              className={classNames(
+                projectcss.all,
+                projectcss.h1,
+                projectcss.__wab_text,
+                sty.h1__wgSpk
+              )}
+            >
+              {"Our Partner"}
+            </h1>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__cvZqd)}
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__uLla)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/otterworld/images/placeholderLogo1Png.png",
+                  fullWidth: 260,
+                  fullHeight: 123,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__pG1Wo)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/otterworld/images/placeholderLogo1Png.png",
+                  fullWidth: 260,
+                  fullHeight: 123,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__gfbMw)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/otterworld/images/placeholderLogo1Png.png",
+                  fullWidth: 260,
+                  fullHeight: 123,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img___7I2B)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/otterworld/images/placeholderLogo1Png.png",
+                  fullWidth: 260,
+                  fullHeight: 123,
+                  aspectRatio: undefined
+                }}
+              />
+            </Stack__>
+          </section>
+          <section className={classNames(projectcss.all, sty.section__rAa1L)}>
+            <div className={classNames(projectcss.all, sty.freeBox__vbJ7Y)}>
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__zfB
+                )}
+              >
+                {"Lets Join & Start today"}
+              </h1>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__sFQn)}
+                displayHeight={"150px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/otterworld/images/buttonappspng.png",
+                  fullWidth: 1170,
+                  fullHeight: 360,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+          </section>
+          <section className={classNames(projectcss.all, sty.section__vveD9)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__p2Am4
+              )}
+            >
+              {"Contact: admin@otterworld.com |  DeFi City, Otter World"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__kjFiM
+              )}
+            >
+              {"\u00a9 2024 Otter World. All rights reserved."}
+            </div>
           </section>
         </div>
       </div>
@@ -428,12 +728,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar", "section", "freeBox", "h1", "dd"],
-  navigationBar: ["navigationBar"],
-  section: ["section", "freeBox", "h1", "dd"],
-  freeBox: ["freeBox"],
-  h1: ["h1"],
-  dd: ["dd"]
+  root: ["root", "navigationBar"],
+  navigationBar: ["navigationBar"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -441,10 +737,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navigationBar: typeof NavigationBar;
-  section: "section";
-  freeBox: "div";
-  h1: "h1";
-  dd: "dd";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -508,10 +800,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
-    section: makeNodeComponent("section"),
-    freeBox: makeNodeComponent("freeBox"),
-    h1: makeNodeComponent("h1"),
-    dd: makeNodeComponent("dd"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

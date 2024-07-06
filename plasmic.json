@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -41,12 +41,13 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jqHMejC8dcPyddaS4gmqUt",
       "projectApiToken": "l8mqQ3SI9XflEPqaYh5yvONxuYXXC896Po8tP7rV5iNwLDnNjfNaq9KOB1ZVPYAyLjGRYiwL5ItUvAlbvVA",
-      "projectName": "Website starter",
+      "projectName": "Otterworld",
       "version": "latest",
       "cssFilePath": "plasmic/website_starter/plasmic.module.css",
       "components": [
@@ -195,10 +196,180 @@
           "id": "Km-uDT1DWaP0",
           "name": "Group 4 (1).png",
           "filePath": "../public/plasmic/website_starter/images/group41Png.png"
+        },
+        {
+          "id": "TmosTKvfVpNJ",
+          "name": "bg1.webp",
+          "filePath": "../public/plasmic/otterworld/images/bg1Webp.webp"
+        },
+        {
+          "id": "PjXTr7bsi1gd",
+          "name": "bg-otter1.png",
+          "filePath": "../public/plasmic/otterworld/images/bgOtter1Png.png"
+        },
+        {
+          "id": "PDQfjB8fOv_Y",
+          "name": "bg-planet1.webp",
+          "filePath": "../public/plasmic/otterworld/images/bgPlanet1Webp.webp"
+        },
+        {
+          "id": "TWi_D6aYrVwW",
+          "name": "bg-planet2.webp",
+          "filePath": "../public/plasmic/otterworld/images/bgPlanet2Webp.webp"
+        },
+        {
+          "id": "PqeZlgNhL4Ah",
+          "name": "bg-planet1.webp 2",
+          "filePath": "../public/plasmic/otterworld/images/bgPlanet1Webp2.webp"
+        },
+        {
+          "id": "ir39GTocxvva",
+          "name": "DALL·E 2024-06-17 15.36.40 - A playful and vibrant 2D flat illustration of a light brown otter standing excitedly on an alien planet, holding a coin and showing it to the camera. .webp",
+          "filePath": "../public/plasmic/otterworld/images/dalle20240617153640APlayfulAndVibrant2DFlatIllustrationOfALightBrownOtterStandingExcitedlyOnAnAlienPlanetHoldingACoinAndShowingItToTheCameraWebp.webp"
+        },
+        {
+          "id": "FHPVdKI4HR2P",
+          "name": "otter-cess.webp",
+          "filePath": "../public/plasmic/otterworld/images/otterCesswebp.webp"
+        },
+        {
+          "id": "q6IMsGbByIdJ",
+          "name": "land1.webp",
+          "filePath": "../public/plasmic/otterworld/images/land1Webp.webp"
+        },
+        {
+          "id": "oH2IqWicoDn3",
+          "name": "DALL·E 2024-07-04 19.44.40 - A 2D flat illustration of a floating island icon representing 'The Key to Prosperity' for otters. The island should have a lush and abundant feel with.webp",
+          "filePath": "../public/plasmic/otterworld/images/dalle20240704194440A2DFlatIllustrationOfAFloatingIslandIconRepresentingTheKeyToProsperityForOttersTheIslandShouldHaveALushAndAbundantFeelWithwebp.webp"
+        },
+        {
+          "id": "3BROY6JcpUCd",
+          "name": "Untitled design (14).png",
+          "filePath": "../public/plasmic/otterworld/images/untitledDesign14Png.png"
+        },
+        {
+          "id": "EqZPmcdqw7Ri",
+          "name": "land.png",
+          "filePath": "../public/plasmic/otterworld/images/landpng.png"
+        },
+        {
+          "id": "5SC8_pCr6Zf_",
+          "name": "land (1).png",
+          "filePath": "../public/plasmic/otterworld/images/land1Png.png"
+        },
+        {
+          "id": "DMrma3HX7xcG",
+          "name": "land (2).png",
+          "filePath": "../public/plasmic/otterworld/images/land2Png.png"
+        },
+        {
+          "id": "pUg8uwrV0ErN",
+          "name": "land (3).png",
+          "filePath": "../public/plasmic/otterworld/images/land3Png.png"
+        },
+        {
+          "id": "XvTHrOX78Ycx",
+          "name": "land4.webp",
+          "filePath": "../public/plasmic/otterworld/images/land4Webp.webp"
+        },
+        {
+          "id": "Xj4rUniY4oOQ",
+          "name": "portal.png",
+          "filePath": "../public/plasmic/otterworld/images/portalpng.png"
+        },
+        {
+          "id": "6x1ILqB0cIWt",
+          "name": "Untitled design (15).png",
+          "filePath": "../public/plasmic/otterworld/images/untitledDesign15Png.png"
+        },
+        {
+          "id": "flLtm4aDKUMf",
+          "name": "Untitled design (16).png",
+          "filePath": "../public/plasmic/otterworld/images/untitledDesign16Png.png"
+        },
+        {
+          "id": "h8nsMIW_x9_i",
+          "name": "maps.png",
+          "filePath": "../public/plasmic/otterworld/images/mapspng.png"
+        },
+        {
+          "id": "ILYYBuzBJ3vJ",
+          "name": "maps-transparent-min.png",
+          "filePath": "../public/plasmic/otterworld/images/mapsTransparentMinpng.png"
+        },
+        {
+          "id": "wzHi20g6jKSW",
+          "name": "DALL·E 2024-07-06 15.52.26 - A serene and magical game background representing the Otter Kingdom, which stands on an island floating in the sky. The aspect ratio should be 16_9. T.webp",
+          "filePath": "../public/plasmic/otterworld/images/dalle20240706155226ASereneAndMagicalGameBackgroundRepresentingTheOtterKingdomWhichStandsOnAnIslandFloatingInTheSkyTheAspectRatioShouldBe169Twebp.webp"
+        },
+        {
+          "id": "DkJ33qCUJcsm",
+          "name": "DALL·E 2024-07-06 17.09.00 - A playful and vibrant 2D flat illustration of an otter character standing on a floating island in a magical kingdom. The otter has a light brown body .webp",
+          "filePath": "../public/plasmic/otterworld/images/dalle20240706170900APlayfulAndVibrant2DFlatIllustrationOfAnOtterCharacterStandingOnAFloatingIslandInAMagicalKingdomTheOtterHasALightBrownBodyWebp.webp"
+        },
+        {
+          "id": "T5Y0z-pjNt_l",
+          "name": "hero-image.webp",
+          "filePath": "../public/plasmic/otterworld/images/heroImagewebp.webp"
+        },
+        {
+          "id": "3IRj98ADNlz4",
+          "name": "hoer-home-image-min.png",
+          "filePath": "../public/plasmic/otterworld/images/hoerHomeImageMinpng.png"
+        },
+        {
+          "id": "VvvKsfvyuXMo",
+          "name": "hero-image-edit.webp",
+          "filePath": "../public/plasmic/otterworld/images/heroImageEditwebp.webp"
+        },
+        {
+          "id": "p28D9_xTXQKl",
+          "name": "DALL·E 2024-07-06 18.07.04 - Create an illustration of a planet containing only the 'Otter Kingdom' without any other ornaments. The planet should feature basic elements like cast.webp",
+          "filePath": "../public/plasmic/otterworld/images/dalle20240706180704CreateAnIllustrationOfAPlanetContainingOnlyTheOtterKingdomWithoutAnyOtherOrnamentsThePlanetShouldFeatureBasicElementsLikeCastwebp.webp"
+        },
+        {
+          "id": "fMUV6rxLVyBQ",
+          "name": "placeholder-logo-1.png",
+          "filePath": "../public/plasmic/otterworld/images/placeholderLogo1Png.png"
+        },
+        {
+          "id": "ixUg1JxXBX3T",
+          "name": "ctabanner123-min.png",
+          "filePath": "../public/plasmic/otterworld/images/ctabanner123Minpng.png"
+        },
+        {
+          "id": "T7RlD4xjHum7",
+          "name": "cta-otter-min.png",
+          "filePath": "../public/plasmic/otterworld/images/ctaOtterMinpng.png"
+        },
+        {
+          "id": "MtR-ZO3m1TPb",
+          "name": "image",
+          "filePath": "../public/plasmic/otterworld/images/image.png"
+        },
+        {
+          "id": "IDu9XG54QaBj",
+          "name": "buttonapps.png",
+          "filePath": "../public/plasmic/otterworld/images/buttonappspng.png"
+        },
+        {
+          "id": "jrm-dgKj69pE",
+          "name": "DALL·E 2024-07-06 20.26.19 - A cute otter character with a light brown body and a white belly and face, large expressive eyes, a small black nose, and a cheerful smile. The otter .webp",
+          "filePath": "../public/plasmic/otterworld/images/dalle20240706202619ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp"
+        },
+        {
+          "id": "DteNK-mRhj5I",
+          "name": "DALL·E 2024-07-06 20.31.26 - A cute otter character with a light brown body and a white belly and face, large expressive eyes, a small black nose, and a cheerful smile. The otter .webp",
+          "filePath": "../public/plasmic/otterworld/images/dalle20240706203126ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp"
+        },
+        {
+          "id": "NOkm1aOy674I",
+          "name": "DALL·E 2024-07-06 20.33.26 - A cute otter character with a light brown body and a white belly and face, large expressive eyes, a small black nose, and a cheerful smile. The otter .webp",
+          "filePath": "../public/plasmic/otterworld/images/dalle20240706203326ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/otterworld/PlasmicGlobalContextsProvider.tsx",
       "splitsProviderFilePath": "",
       "codeComponents": [
         {
@@ -212,6 +383,34 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "displayName": "hostless-scroll-parallax",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "displayName": "global-parallax-provider",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
       ],
       "customFunctions": []
