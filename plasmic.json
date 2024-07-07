@@ -366,6 +366,31 @@
           "id": "NOkm1aOy674I",
           "name": "DALL·E 2024-07-06 20.33.26 - A cute otter character with a light brown body and a white belly and face, large expressive eyes, a small black nose, and a cheerful smile. The otter .webp",
           "filePath": "../public/plasmic/otterworld/images/dalle20240706203326ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp"
+        },
+        {
+          "id": "6Lp576NXMD68",
+          "name": "otterwallet.png",
+          "filePath": "../public/plasmic/otterworld/images/otterwalletpng.png"
+        },
+        {
+          "id": "L0HePbXa9zkB",
+          "name": "otterwallet.png 2",
+          "filePath": "../public/plasmic/otterworld/images/otterwalletpng2.png"
+        },
+        {
+          "id": "QOQUypYxx5-G",
+          "name": "otterAI.png",
+          "filePath": "../public/plasmic/otterworld/images/otterAIpng.png"
+        },
+        {
+          "id": "esua8GtGNtQM",
+          "name": "otterchest.png",
+          "filePath": "../public/plasmic/otterworld/images/otterchestpng.png"
+        },
+        {
+          "id": "_BA5gskUqD9t",
+          "name": "maps-1-min.png",
+          "filePath": "../public/plasmic/otterworld/images/maps1Minpng.png"
         }
       ],
       "indirect": false,
@@ -413,7 +438,8 @@
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

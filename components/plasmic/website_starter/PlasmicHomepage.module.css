@@ -24,6 +24,11 @@
     grid-column: 4;
   }
 }
+.pageMetadataOverride:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .navigationBar:global(.__wab_instance) {
   display: flex;
   flex-direction: row;
@@ -320,6 +325,7 @@
   max-width: 100%;
   color: #686868;
   font-weight: 400;
+  padding-top: 0px;
   min-width: 0;
 }
 .section___1Nyr {
@@ -481,6 +487,7 @@
 }
 .text___5Ynu {
   position: relative;
+  line-height: 2;
 }
 .columns__ibUau {
   display: flex;
@@ -580,6 +587,7 @@
 }
 .text__zxb9I {
   position: relative;
+  line-height: 2;
 }
 .column__jvLvO {
   display: flex;
@@ -723,6 +731,7 @@
 }
 .text__hHeJm {
   position: relative;
+  line-height: 2;
 }
 .section__dHqsF {
   display: grid;

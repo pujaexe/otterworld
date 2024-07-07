@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { PlasmicHead } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 
 import { useScreenVariants as useScreenVariantsv6JzT4AzP0Fn } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: v6jzT4azP0Fn/globalVariant
@@ -85,6 +86,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   navigationBar?: Flex__<typeof NavigationBar>;
 };
 
@@ -148,6 +150,17 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={
+              "Otter World is a comprehensive DeFi platform integrating cutting-edge technology and AI to provide a seamless and secure experience. Join us and be a part of our vibrant community!"
+            }
+            image={"/plasmic/otterworld/images/otterwalletpng.png"}
+            title={"Otter World"}
+          />
+
           <NavigationBar
             data-plasmic-name={"navigationBar"}
             data-plasmic-override={overrides.navigationBar}
@@ -343,7 +356,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Otter World is a comprehensive DeFi platform integrating cutting-edge technology and AI to provide a seamless and secure experience. Join us and be a part of our vibrant community!"
+                    "Our mission is to redefine the DeFi ecosystem by making it accessible, secure, and engaging for everyone. We believe in the power of decentralization and aim to empower users by providing innovative tools and features that simplify and enhance their financial activities."
                   }
                 </h4>
               </Stack__>
@@ -379,7 +392,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/otterworld/images/dalle20240706202619ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp",
+                    src: "/plasmic/otterworld/images/otterwalletpng2.png",
                     fullWidth: 1024,
                     fullHeight: 1024,
                     aspectRatio: undefined
@@ -480,7 +493,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/otterworld/images/dalle20240706203126ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp",
+                    src: "/plasmic/otterworld/images/otterAIpng.png",
                     fullWidth: 1024,
                     fullHeight: 1024,
                     aspectRatio: undefined
@@ -505,7 +518,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/otterworld/images/dalle20240706203326ACuteOtterCharacterWithALightBrownBodyAndAWhiteBellyAndFaceLargeExpressiveEyesASmallBlackNoseAndACheerfulSmileTheOtterWebp.webp",
+                    src: "/plasmic/otterworld/images/otterchestpng.png",
                     fullWidth: 1024,
                     fullHeight: 1024,
                     aspectRatio: undefined
@@ -573,7 +586,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/otterworld/images/mapsTransparentMinpng.png",
+                  src: "/plasmic/otterworld/images/maps1Minpng.png",
                   fullWidth: 1024,
                   fullHeight: 1821,
                   aspectRatio: undefined
@@ -728,7 +741,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar"],
+  root: ["root", "pageMetadataOverride", "navigationBar"],
+  pageMetadataOverride: ["pageMetadataOverride"],
   navigationBar: ["navigationBar"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -736,6 +750,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  pageMetadataOverride: typeof PlasmicHead;
   navigationBar: typeof NavigationBar;
 };
 
@@ -799,6 +814,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     navigationBar: makeNodeComponent("navigationBar"),
 
     // Metadata about props expected for PlasmicHomepage
